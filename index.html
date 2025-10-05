@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank System Connected</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <p>68070245</p>
+    <h2>ITF Website</h2>
+    <p>Week 14</p>
+  </nav>
+  <img src="coins.png">
+  <div class="container">
+    
+    <h2 class="BalanceBox">Balance Information</h2>
+    <div>
+      Account Balance: <input type="number" id="inputAccount" placeholder="กรอกยอดเงินในบัญชี"><br><br>
+      Cash Balance: <input type="number" id="inputBalance" placeholder="กรอกยอดเงินสด">
+      <button onclick="change()">Change</button>
+    </div>
+
+    <div>
+      <p id="result"></p>
+    </div>
+
+    <hr>
+
+    <h2 class="OperationBox">Bank Operation</h2>
+  <p>Account Balance: <span id="accountDisplay">0</span> บาท</p>
+  <p>Cash Balance: <span id="cashDisplay">0</span> บาท</p>
+
+  <input type="number" id="amount" placeholder="ใส่จำนวนเงิน">
+  <select id="operation">
+    <option value="deposit">Deposit</option>
+    <option value="withdraw">Withdraw</option>
+  </select>
+  <button onclick="processTransaction()">Submit</button>
+
+  <p id="error" style="color:red;"></p>
+
+  <ul id="history"></ul>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
